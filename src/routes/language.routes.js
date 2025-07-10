@@ -5,7 +5,7 @@ import {
     createLanguage,
     updateLanguage,
     deleteLanguage
-} from '../controllers/language.controller.js';
+} from '../controllers/language.controllers.js';
 
 const router = Router();
 
