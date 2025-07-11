@@ -7,9 +7,9 @@ dotenv.config();
 
 const app = express();
 app.use(express.json());
-app.use('/api/languages', languageRoutes);
 
 const PORT = process.env.PORT || 3000;
+app.use('/api/languages', languageRoutes);
 
 sequelize.sync().then(() => {
      console.log('base de datos conectada correctamente');
